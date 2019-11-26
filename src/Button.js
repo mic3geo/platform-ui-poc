@@ -302,7 +302,6 @@ const StyledButton = styled.button`
             ${rgba(color.secondary, 0.2)} 0 8px 18px 0px;
         }
       `};
-
 `;
 
 const ButtonLink = StyledButton.withComponent('a');
