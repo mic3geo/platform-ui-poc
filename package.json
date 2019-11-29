@@ -12,17 +12,20 @@
     "styled-components": "^4.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "chromatic": "CHROMATIC_APP_CODE=4v420nue0i4 chromatic",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "build-storybook-docs": "build-storybook -s public --docs",
-    "chromatic": "CHROMATIC_APP_CODE=4v420nue0i4 chromatic"
+    "build-storybook-docs": "build-storybook -s public --docs"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
   },
   "browserslist": {
     "production": [
@@ -37,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.7.4",
     "@storybook/addon-a11y": "^5.2.6",
     "@storybook/addon-actions": "^5.2.6",
     "@storybook/addon-docs": "^5.2.6",
@@ -45,6 +49,19 @@
     "@storybook/addon-storysource": "^5.2.6",
     "@storybook/addons": "^5.2.6",
     "@storybook/react": "^5.2.6",
+    "auto": "^7.16.3",
     "storybook-chromatic": "^3.4.0"
-  }
+  },
+  "description": "The Learn Storybook design system is a subset of the full [Storybook design system](https://github.com/storybookjs/design-system/), created as a learning resource for those interested in learning how to write and publish a design system using best in practice techniques.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mic3geo/platform-ui-poc.git"
+  },
+  "author": "mi-c3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mic3geo/platform-ui-poc/issues"
+  },
+  "homepage": "https://github.com/mic3geo/platform-ui-poc#readme"
 }
