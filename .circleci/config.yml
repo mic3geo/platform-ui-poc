@@ -23,7 +23,6 @@ jobs:
 
       - run: npm test
       - run: npm run chromatic -- --exit-zero-on-changes
-      - run: git clean -f -n
       - run: |
           if [ $CIRCLE_BRANCH = "master" ]
           then
