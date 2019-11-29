@@ -20,5 +20,5 @@ jobs:
       - run: |
           if [ $CIRCLE_BRANCH = "master" ]
           then
-            npm run release
+            npx auto shipit
           fi
