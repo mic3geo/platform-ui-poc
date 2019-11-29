@@ -1,7 +1,7 @@
 {
   "name": "platform-ui-poc",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "polished": "^3.4.2",
     "prettier": "^1.19.1",
